@@ -1,0 +1,83 @@
+/* --- Global Navbar Styles --- */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(15, 23, 42, 0.95);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 1000;
+    color: white;
+    box-sizing: border-box; /* Ensures padding doesn't break width */
+}
+
+.navbar_brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.navbar_name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #2563eb;
+}
+
+/* --- Desktop Navigation --- */
+.navbar_links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar_links a {
+    color: #e2e8f0;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.navbar_links a:hover {
+    color: #2563eb;
+}
+
+.navbar_hamburger {
+    display: none; /* Hidden on desktop */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    line-height: 1;
+}
+
+/* --- Mobile Responsive Styles --- */
+@media (max-width: 768px) {
+    .navbar_hamburger {
+        display: block; /* Show toggle button */
+    }
+
+    .navbar_links {
+        display: none; /* Hide menu by default on mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 100%; /* Sits exactly below the navbar */
+        left: 0;
+        width: 100%;
+        background: rgba(15, 23, 42, 0.98);
+        padding: 1rem 2rem;
+        gap: 1.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* This class matches the template literal in your JSX: ${menuOpen ? 'open' : ''} */
+    .navbar_links.open {
+        display: flex;
+    }
+}
