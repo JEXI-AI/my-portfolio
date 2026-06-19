@@ -11,7 +11,7 @@ function Hero() {
                     <p className="hero_bio"></p>
 
                     <div className="hero_buttons">
-                        <a href="#contact" className='hero_button'>Contact</a>
+                        <a href="#contact" className='hero_button'>Contact</a><br/>
                         <a href="#cv" className='btn btn--outline'>Download</a>
                     </div>
                 </div>
