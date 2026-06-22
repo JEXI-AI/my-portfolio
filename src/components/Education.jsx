@@ -1,8 +1,8 @@
 import './Education.css';
 
 const educationData = [
-  { id: 1, degree: 'B.Sc. Computer Science', school: 'University of Lagos', year: '2020 – 2024', grade: 'First Class Honours', emoji: '🎓' }, 
-  { id: 2, degree: 'Web Development Bootcamp', school: 'Andela Learning Community', year: '2023', grade: 'Completed', emoji: '💻' }, 
+  { id: 1, degree: 'B.Sc. Computer Science', school: 'Mountain Top University', year: '2024 – 2028', grade: 'First Class Honours', emoji: '🎓' }, 
+  { id: 2, degree: 'Web Development Bootcamp', school: 'Angela Learning Community', year: '2023', grade: 'Completed', emoji: '💻' }, 
   { id: 3, degree: 'WAEC / SSCE', school: 'Community Secondary School', year: '2020', grade: '8 distinctions', emoji: '📜' }, 
 ];
 
