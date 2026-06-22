@@ -1,24 +1,29 @@
-import './Hero.css'
+import './Hero.css';
 
-function Hero() {
-    return (
-        <section id='hero' className='hero'>
-            <div className='hero-container'>
-                <div className="hero_content">
-                    <p className="hero_greeting">Hello, I am Anirah Destiny</p>
-                    <h1 className="hero_name"></h1>
-                    <p className="hero_title"></p>
-                    <p className="hero_bio"></p>
+function Hero({ name, title, bio }) {
+  return (
+    <section id="hero" className="hero">
+      <div className="hero__container">
+        <div className="hero__content">
+          <p className="hero__greeting">Hello, I'm</p>
+          <h1 className="hero__name">{name}</h1>
+          <h2 className="hero__title">{title}</h2>
+          <p className="hero__bio">{bio}</p>
 
-                    <div className="hero_buttons">
-                        <a href="#contact" className='hero_button'>Contact</a><br/>
-                        <a href="#cv" className='btn btn--outline'>Download</a>
-                    </div>
-                </div>
-                <div></div>
-            </div>
-        </section>
-    )
+          <div className="hero__buttons">
+            <a href="#contact" className="btn btn--primary">Contact Me</a>
+            <a href="#cv"      className="btn btn--outline">Download CV</a>
+          </div>
+        </div>
+
+        <div className="hero__image">
+          <div className="hero__avatar">
+            <span className="hero__avatar-icon">👤</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
 
-export default Hero
+export default Hero;
