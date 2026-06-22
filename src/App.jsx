@@ -12,7 +12,7 @@ import Footer from './components/Footer';
 // ✏️ CUSTOMIZED WITH YOUR INFORMATION
 const portfolioData = {
   name:     'Anirah Destiny',                          // ← Your updated name
-  title:    'Frontend Developer & UI Designer',       // ← Your job title
+  title:    'Fullstack Developer & Devops Engineer',       // ← Your job title
   bio:      'I build beautiful, responsive web experiences that make users smile.',
   email:    'anirahchibuzor1976@gmail.com',                    // ← Update with your email
   phone:    '+234 800 000 0000',                      // ← Update with your phone
